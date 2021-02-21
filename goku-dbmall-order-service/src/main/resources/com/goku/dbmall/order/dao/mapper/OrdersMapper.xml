@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goku.dbmall.order.dao.mapper.OrdersMapper">
+  <resultMap id="BaseResultMap" type="com.goku.dbmall.order.dao.po.Orders">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="gkcode" jdbcType="VARCHAR" property="gkcode" />
+    <result column="user_gkcode" jdbcType="VARCHAR" property="userGkcode" />
+    <result column="receiver_name" jdbcType="VARCHAR" property="receiverName" />
+    <result column="receiver_mobile" jdbcType="VARCHAR" property="receiverMobile" />
+    <result column="receiver_address" jdbcType="VARCHAR" property="receiverAddress" />
+    <result column="total_amount" jdbcType="DECIMAL" property="totalAmount" />
+    <result column="real_pay_amount" jdbcType="DECIMAL" property="realPayAmount" />
+    <result column="left_msg" jdbcType="VARCHAR" property="leftMsg" />
+    <result column="created_user" jdbcType="VARCHAR" property="createdUser" />
+    <result column="created_date" jdbcType="TIMESTAMP" property="createdDate" />
+    <result column="modified_user" jdbcType="VARCHAR" property="modifiedUser" />
+    <result column="modified_date" jdbcType="TIMESTAMP" property="modifiedDate" />
+    <result column="deleted" jdbcType="TINYINT" property="deleted" />
+    <result column="ts" jdbcType="BIGINT" property="ts" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, gkcode, user_gkcode, receiver_name, receiver_mobile, receiver_address, total_amount, 
+    real_pay_amount, left_msg, created_user, created_date, modified_user, modified_date, 
+    deleted, ts
+  </sql>
+
+</mapper>
