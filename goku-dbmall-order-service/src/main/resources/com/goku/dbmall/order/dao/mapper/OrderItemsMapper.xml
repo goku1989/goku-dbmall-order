@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goku.dbmall.order.dao.mapper.OrderItemsMapper">
+  <resultMap id="BaseResultMap" type="com.goku.dbmall.order.dao.po.OrderItems">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="gkcode" jdbcType="VARCHAR" property="gkcode" />
+    <result column="orders_gkcode" jdbcType="VARCHAR" property="ordersGkcode" />
+    <result column="goods_gkcode" jdbcType="VARCHAR" property="goodsGkcode" />
+    <result column="goods_img" jdbcType="VARCHAR" property="goodsImg" />
+    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+    <result column="goods_spec_name" jdbcType="VARCHAR" property="goodsSpecName" />
+    <result column="deal_price" jdbcType="DECIMAL" property="dealPrice" />
+    <result column="buy_counts" jdbcType="INTEGER" property="buyCounts" />
+    <result column="created_user" jdbcType="VARCHAR" property="createdUser" />
+    <result column="created_date" jdbcType="TIMESTAMP" property="createdDate" />
+    <result column="modified_user" jdbcType="VARCHAR" property="modifiedUser" />
+    <result column="modified_date" jdbcType="TIMESTAMP" property="modifiedDate" />
+    <result column="deleted" jdbcType="TINYINT" property="deleted" />
+    <result column="ts" jdbcType="BIGINT" property="ts" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, gkcode, orders_gkcode, goods_gkcode, goods_img, goods_name, goods_spec_name, 
+    deal_price, buy_counts, created_user, created_date, modified_user, modified_date, 
+    deleted, ts
+  </sql>
+
+</mapper>
